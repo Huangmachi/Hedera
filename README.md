@@ -57,7 +57,7 @@ or:
 
     $ ryu-manager --observe-links ryu/app/ofctl_rest.py ryu/app/Hedera/Hedera.py --k_paths=16 --weight=hop --fanout=8
 
-NOTE: After these, we should wait for the network to complete the initiation for several seconds, because LLDP needs some time to discovery the network topology. We can't operate the network until 'Get network topology' is printed in the terminal of the Ryu controller, otherwise, some error will occur. It may be about 20 seconds for fattree4, and a little longer for fattree8.
+NOTE: After these, we should wait for the network to complete the initiation for several seconds, because LLDP needs some time to discovery the network topology. We can't operate the network until 'Get network topology' is printed in the terminal of the Ryu controller, otherwise, some error will occur. It may be about 10 seconds for fattree4, and a little longer for fattree8.
 
 After that, test the correctness of Hedera:
 
