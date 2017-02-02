@@ -51,11 +51,12 @@ Firstly, start up the network. An example is shown below:
 
 And then, go into the top directory of Ryu, and run the application. You are suggested to add arguments when starting Ryu. An example is shown below:
 
-    $ ryu-manager --observe-links ryu/app/ofctl_rest.py ryu/app/Hedera/Hedera.py --k_paths=4 --weight=hop --fanout=4
+    $ cd ryu
+    $ ryu-manager --observe-links ryu/app/Hedera/Hedera.py --k_paths=4 --weight=hop --fanout=4
 
 or:
 
-    $ ryu-manager --observe-links ryu/app/ofctl_rest.py ryu/app/Hedera/Hedera.py --k_paths=16 --weight=hop --fanout=8
+    $ ryu-manager --observe-links ryu/app/Hedera/Hedera.py --k_paths=16 --weight=hop --fanout=8
 
 NOTE: After these, we should wait for the network to complete the initiation for several seconds, because LLDP needs some time to discovery the network topology. We can't operate the network until 'Get network topology' is printed in the terminal of the Ryu controller, otherwise, some error will occur. It may be about 10 seconds for fattree4, and a little longer for fattree8.
 
