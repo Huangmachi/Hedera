@@ -1,4 +1,4 @@
-##Hedera
+## Hedera
 
 Hedera is a SDN-based traffic schduling application implementating "Hedera", see the paper "Hedera: dynamic flow scheduling for data center networks" by Mohammad Al-Fares. Initially, network traffic is routed with ECMP. Once the speed of any flow in the switch exceeds 10% of the bandwidth of the link, routing path will be calculated and installed by the Ryu controller to reschedule the flow to other light loading path.
 It includes a set of Ryu applications collecting basic network information, such as topology and free bandwidth of links. Fortunately, our application supports load balancing based on dynamic traffic information.
